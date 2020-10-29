@@ -2,7 +2,7 @@ name: Uptime Monitor
 on:
   schedule:
     # - cron: '*/60 * * * *' #every 1 hour
-    - cron: '* * * * *'
+    - cron: '*/5 * * * *'
 jobs:
   ping_site:
     runs-on: ubuntu-latest
