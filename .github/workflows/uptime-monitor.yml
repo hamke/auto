@@ -2,7 +2,7 @@ name: Uptime Monitor
 on:
   schedule:
     # - cron: '*/60 * * * *' #every 1 hour
-    - cron: '*/5 * * * *'
+    - cron: '*/60 * * * *'
 jobs:
   ping_site:
     runs-on: ubuntu-latest
@@ -11,5 +11,5 @@ jobs:
       - name: Ping Site
         uses: srt32/uptime@v0.2
         with:
-          url-to-hit: 'https://www.wikipedia.org/'
+          url-to-hit: 'https://www.chinatalk.net/'
           expected-statuses: '200'
